@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "africoiner_backend": {
+      "main": "src/africoiner_backend/main.mo",
+      "type": "motoko"
+    },
+    "africoiner_frontend": {
+      "dependencies": [
+        "africoiner_backend"
+      ],
+      "source": [
+        "src/africoiner_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "africoiner_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
